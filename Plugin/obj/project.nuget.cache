@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ldA+pGqkMjkw/4cLTlmSrVx0RuDqemwFiB9wyM9/7aqYAFh2ZSohb5MzLlq8sWTVgUSxXkAjL+K9vc+mJxdPBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ryan\\RiderProjects\\RiderGrasshopperPlugin\\Plugin\\GrasshopperPlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ryan\\.nuget\\packages\\grasshopper\\8.5.24072.13001\\grasshopper.8.5.24072.13001.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\rhinocommon\\8.5.24072.13001\\rhinocommon.8.5.24072.13001.nupkg.sha512"
+  ],
+  "logs": []
+}

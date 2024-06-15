@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrasshopperPlugin", "D:\Repos\rhino-developer-samples-8\grasshopper\cs\GrasshopperPlugin\GrasshopperPlugin.csproj", "{073D9AA5-A4EE-4060-A478-9B076FC0B139}"
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrasshopperPlugin", "Plugin\GrasshopperPlugin.csproj", "{073D9AA5-A4EE-4060-A478-9B076FC0B139}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +13,7 @@ Global
 		{073D9AA5-A4EE-4060-A478-9B076FC0B139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073D9AA5-A4EE-4060-A478-9B076FC0B139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073D9AA5-A4EE-4060-A478-9B076FC0B139}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,4 @@
+D:\Repos\rhino-developer-samples-8\grasshopper\cs\GrasshopperPlugin\obj\Debug\GrasshopperPlugin.csproj.AssemblyReference.cache
+D:\Repos\rhino-developer-samples-8\grasshopper\cs\GrasshopperPlugin\obj\Debug\GrasshopperPlugin.Properties.Resources.resources
+D:\Repos\rhino-developer-samples-8\grasshopper\cs\GrasshopperPlugin\obj\Debug\GrasshopperPlugin.csproj.GenerateResource.cache
+D:\Repos\rhino-developer-samples-8\grasshopper\cs\GrasshopperPlugin\obj\Debug\GrasshopperPlugin.csproj.CoreCompileInputs.cache
