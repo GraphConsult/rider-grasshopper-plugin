@@ -41,10 +41,6 @@ To Create a New Grasshopper Component:
 If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
 Contributions are always welcome! Contact me at `tech@graphconsult.xyz` if you would like to become a collaborator.
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## Contact
 
 For questions or support, please contact me at `tech@graphconsult.xyz` or visit https://www.graphconsult.xyz.
