@@ -38,6 +38,24 @@
         <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Ed.Eto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+          <HintPath>..\packages\RhinoCommon.8.5.24072.13001\lib\net48\Ed.Eto.dll</HintPath>
+        </Reference>
+        <Reference Include="Eto, Version=2.7.0.0, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+          <HintPath>..\packages\RhinoCommon.8.5.24072.13001\lib\net48\Eto.dll</HintPath>
+        </Reference>
+        <Reference Include="GH_IO, Version=8.5.24072.13001, Culture=neutral, PublicKeyToken=6a29997d2e6b4f97, processorArchitecture=MSIL">
+          <HintPath>..\packages\Grasshopper.8.5.24072.13001\lib\net48\GH_IO.dll</HintPath>
+        </Reference>
+        <Reference Include="Grasshopper, Version=8.5.24072.13001, Culture=neutral, PublicKeyToken=dda4f5ec2cd80803, processorArchitecture=MSIL">
+          <HintPath>..\packages\Grasshopper.8.5.24072.13001\lib\net48\Grasshopper.dll</HintPath>
+        </Reference>
+        <Reference Include="Rhino.UI, Version=8.5.24072.13001, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+          <HintPath>..\packages\RhinoCommon.8.5.24072.13001\lib\net48\Rhino.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="RhinoCommon, Version=8.5.24072.13001, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+          <HintPath>..\packages\RhinoCommon.8.5.24072.13001\lib\net48\RhinoCommon.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
@@ -66,9 +84,10 @@
         <None Include="Resources\TaskCapableComponent_24x24.png"/>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Grasshopper">
-            <Version>8.5.24072.13001</Version>
-        </PackageReference>
+        <Content Include="README.md"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Tests\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -92,4 +111,13 @@
         </StartArguments>
         <StartAction>Program</StartAction>
     </PropertyGroup>
+    <Import Project="..\packages\RhinoCommon.8.5.24072.13001\build\net48\RhinoCommon.targets" Condition="Exists('..\packages\RhinoCommon.8.5.24072.13001\build\net48\RhinoCommon.targets')" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\RhinoCommon.8.5.24072.13001\build\net48\RhinoCommon.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\RhinoCommon.8.5.24072.13001\build\net48\RhinoCommon.targets'))" />
+      <Error Condition="!Exists('..\packages\Grasshopper.8.5.24072.13001\build\net48\Grasshopper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grasshopper.8.5.24072.13001\build\net48\Grasshopper.targets'))" />
+    </Target>
+    <Import Project="..\packages\Grasshopper.8.5.24072.13001\build\net48\Grasshopper.targets" Condition="Exists('..\packages\Grasshopper.8.5.24072.13001\build\net48\Grasshopper.targets')" />
 </Project>
